@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Successful - Bloom Bazaar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff4f9;
+    }
+    .container {
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .success-box {
+      background: white;
+      padding: 40px;
+      max-width: 550px;
+      margin: auto;
+      border-radius: 18px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #ff6fa8;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.6;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 26px;
+      background: #ff6fa8;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 10px;
+    }
+    .button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="success-box">
+
+      <h1>Order Placed Successfully! 🎉</h1>
+
+      <p>Thank you for purchasing from <strong>Bloom Bazaar</strong>.</p>
+      <p>Your order has been received and is being processed.</p>
+
+      <p><strong>Order ID:</strong> {{ order.id }}</p>
+      <p><strong>Flower:</strong> {{ order.flower_name }}</p>
+      <p><strong>Quantity:</strong> {{ order.qty }} kg</p>
+      <p><strong>Total Amount:</strong> ₹{{ order.total }}</p>
+
+      <a href="/" class="button">Go to Home</a>
+    </div>
+  </div>
+
+</body>
+</html>
